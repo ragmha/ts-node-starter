@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-starter",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "repository": "git@github.com:ragmha/ts-node-starter.git",
+  "author": "Raghib Hasan <raghibmidhat@gmail.com> (https://raghibm.com/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "run-p watch:*",
+    "start": "node dist/server.js",
+    "watch:node": "nodemon dist/server.js",
+    "watch:ts": "tsc -w"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9",
+    "npm-run-all": "4.1.5",
+    "tslint": "5.11.0",
+    "typescript": "3.2.2"
+  },
+  "dependencies": {
+    "@types/express": "4.16.0",
+    "express": "4.16.4"
+  }
+}
